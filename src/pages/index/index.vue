@@ -1,6 +1,6 @@
 <template>
   <view class="flex flex-col">
-    <view class="container">
+    <view class="container mx-auto">
       <uni-badge text="1"></uni-badge>
       <uni-badge text="3" type="primary" :inverted="true"></uni-badge>
       <view class="index text-center bg-blue-300" @click="showSys">blue text1</view>
