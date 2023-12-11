@@ -3,7 +3,33 @@
     {
       "path": "pages/index/index",
       "style": {
-        "navigationBarTitleText": "nav bar title"
+        "navigationBarTitleText": "nav bar title",
+
+        "navigationStyle": "default",
+        "navigationBarBackgroundColor": "#000",
+        "backgroundColorBottom": "#F44850"
+      }
+    },
+    {
+      "path": "pages/media/index",
+      "style": {
+        "navigationBarTitleText": "Media"
+      }
+    },
+    {
+      "path": "pages/share/index",
+      "style": {
+        "navigationBarTitleText": "Share 分享",
+        "navigationStyle": "custom",
+        "backgroundColor": "#42b983"
+      }
+    },
+    {
+      "path": "pages/map/index",
+      "style": {
+        "navigationBarTitleText": "地图",
+        "navigationStyle": "default",
+        "backgroundColor": "#42b983"
       }
     }
   ],
@@ -14,9 +40,53 @@
     }
   },
   "globalStyle": {
-    "navigationBarTextStyle": "black",
+    "navigationBarTextStyle": "white",
     "navigationBarTitleText": "uni-app",
-    "navigationBarBackgroundColor": "#F8F8F8",
-    "backgroundColor": "#F8F8F8"
+    "navigationBarBackgroundColor": "#42b983",
+    "backgroundColor": "#42b983"
+  },
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "height": "50px",
+    "fontSize": "10px",
+    "iconWidth": "24px",
+    "spacing": "3px",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "static/logo.png",
+        "selectedIconPath": "static/logo.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/media/index",
+        "iconPath": "static/logo.png",
+        "selectedIconPath": "static/logo.png",
+        "text": "媒体"
+      },
+      {
+        "pagePath": "pages/share/index",
+        "iconPath": "static/logo.png",
+        "selectedIconPath": "static/logo.png",
+        "text": "分享"
+      },
+      {
+        "pagePath": "pages/map/index",
+        "iconPath": "static/logo.png",
+        "selectedIconPath": "static/logo.png",
+        "text": "地图"
+      }
+    ],
+    "midButton": {
+      "width": "80px",
+      "height": "50px",
+      "text": "文字",
+      "iconPath": "static/logo.png",
+      "iconWidth": "24px",
+      "backgroundImage": "static/logo.png"
+    }
   }
 }
